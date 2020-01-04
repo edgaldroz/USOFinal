@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Vin</string>
+    <string name="RegresarPagina">Cerrar</string>
+    <string name="Siguiente">Siguiente</string>
+    <string name="Anterior">Anterior</string>
+
+</resources>

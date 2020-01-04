@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="6dp"
+        android:paddingTop="9dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/item_lista_temas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="3dp"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:id="@+id/lblTema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tema de ejemplo"
+            android:textColor="#646464"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/lblDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripcion de ejemplo"
+            android:textColor="#37A1A1"
+            android:textSize="12dp"
+            android:layout_marginTop="-2dp"
+            android:maxLines="2"
+            android:minLines="1"/>
+    </LinearLayout>
+</LinearLayout>
+
+    <!--
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingLeft="10dp"
+         android:paddingBottom="2dp">
+
+         <ImageView
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:src="@drawable/ic_contenido"/>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:gravity="center_vertical"
+             android:layout_gravity="center_vertical">
+             <TextView
+                 android:id="@+id/lblTema"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Tema de ejemplo"
+                 android:textColor="#008080"
+                 android:textSize="17dp"
+                 android:textStyle="bold" />
+             <TextView
+                 android:id="@+id/lblDescripcion"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Descripcion de ejemplo"
+                 android:textColor="#6E6E6E"
+                 android:textSize="17dp"
+                 android:layout_marginTop="-6dp"/>
+         </LinearLayout>
+     </LinearLayout>
+     -->
+</LinearLayout>

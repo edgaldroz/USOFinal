@@ -310,11 +310,17 @@ public class CapturaDeDatos extends AppCompatActivity {
         PolarAExponencial.setVisibility(myExerciseToSolve.getIdTema().equals(104) ? View.VISIBLE : View.GONE);
 
 
-        MatrizGauss.setVisibility(myExerciseToSolve.getIdTema().equals(201) ? View.VISIBLE : View.GONE);
-        MatrizInverza.setVisibility(myExerciseToSolve.getIdTema().equals(202) ? View.VISIBLE : View.GONE);
-        LinearSolucionEcuacionLineales.setVisibility(myExerciseToSolve.getIdTema().equals(204) ? View.VISIBLE : View.GONE);
-        MatrizGauss.setVisibility(myExerciseToSolve.getIdTema().equals(204) ? View.VISIBLE : View.GONE);
-
+        if (myExerciseToSolve.getIdTema().equals(201)){
+            MatrizGauss.setVisibility(myExerciseToSolve.getIdTema().equals(201) ? View.VISIBLE : View.GONE);
+            LinearSolucionEcuacionLineales.setVisibility(View.GONE);
+        }else if (myExerciseToSolve.getIdTema().equals(204)){
+            LinearSolucionEcuacionLineales.setVisibility(myExerciseToSolve.getIdTema().equals(204) ? View.VISIBLE : View.GONE);
+            MatrizGauss.setVisibility(View.VISIBLE);
+        }else if (myExerciseToSolve.getIdTema().equals(202)){
+            MatrizInverza.setVisibility(myExerciseToSolve.getIdTema().equals(202) ? View.VISIBLE : View.GONE);
+            LinearSolucionEcuacionLineales.setVisibility(View.GONE);
+        }
+        
         VectorFuerzaEntrePuntos.setVisibility(myExerciseToSolve.getIdTema().equals(301) ? View.VISIBLE : View.GONE);
         VectorProyeccion.setVisibility(myExerciseToSolve.getIdTema().equals(302) ? View.VISIBLE : View.GONE);
         ProductoConVectores.setVisibility(myExerciseToSolve.getIdTema().equals(303) ? View.VISIBLE : View.GONE);

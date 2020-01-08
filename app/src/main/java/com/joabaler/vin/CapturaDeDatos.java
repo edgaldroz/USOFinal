@@ -320,7 +320,7 @@ public class CapturaDeDatos extends AppCompatActivity {
             MatrizInverza.setVisibility(myExerciseToSolve.getIdTema().equals(202) ? View.VISIBLE : View.GONE);
             LinearSolucionEcuacionLineales.setVisibility(View.GONE);
         }
-        
+
         VectorFuerzaEntrePuntos.setVisibility(myExerciseToSolve.getIdTema().equals(301) ? View.VISIBLE : View.GONE);
         VectorProyeccion.setVisibility(myExerciseToSolve.getIdTema().equals(302) ? View.VISIBLE : View.GONE);
         ProductoConVectores.setVisibility(myExerciseToSolve.getIdTema().equals(303) ? View.VISIBLE : View.GONE);

@@ -864,8 +864,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:id="@+id/PolarAExponencial"
-                >
-
+                android:visibility="gone">
+                <!-- x -->
                 <!-- Seleccion de opciones -->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1185,7 +1185,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:id="@+id/OpcRepreExponencial"
-                android:visibility="visible">
+                android:visibility="gone">
+                <!-- x -->
 
                 <!-- Seleccion de opciones -->
                 <LinearLayout
@@ -2378,6 +2379,104 @@
         <!--endregion ================================================================== -->
 
         <!--region MATRICES ============================================================ -->
+        <!--solucion de ecuaciones lineales-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/LinearSolucionEcuacionLineales"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="vertical"
+                    android:background="@drawable/item_terciario"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:paddingBottom="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¿Qué método desea seleccionar?"
+                        android:textColor="#324154"
+                        android:textSize="14dp"
+                        android:gravity="start|top"
+                        android:layout_marginBottom="10dp"/>
+
+                    <!-- OperacionPolarPotencia -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="fill_horizontal|center_horizontal"
+                            android:gravity="fill_horizontal|center_horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/btnMGauss"
+                                android:layout_width="85dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:background="@drawable/item_opc_seleccionado"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tvMGauss"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="monospace"
+                                    android:gravity="center"
+                                    android:textColor="#008080"
+                                    android:text="Gauss"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btnMInversa"
+                                android:layout_width="85dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:background="@drawable/item_opc"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp">
+
+                                <TextView
+                                    android:id="@+id/tvMInversa"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="monospace"
+                                    android:gravity="center"
+                                    android:text="Inversa"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
 
         <ScrollView
             android:layout_width="match_parent"

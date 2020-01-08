@@ -209,6 +209,12 @@ public class CapturaDeDatos extends AppCompatActivity {
     private LinearLayout MatrizInverzabtnSolucion, MatrizInverzaLinear2x2, MatrizInverzaLinear3x3, MatrizInverzaFila3;
     private TextView MatrizInverzaText2x2, MatrizInverzaText3x3;
     //endregion
+
+    //region Solucion Ecuaciones liniales
+    private LinearLayout LinearSolucionEcuacionLineales,btnMGauss,btnMInversa;
+    private TextView tvMGauss,tvMInversa;
+    //endregion
+
     //endregion
 
     //region Vectores
@@ -263,6 +269,7 @@ public class CapturaDeDatos extends AppCompatActivity {
         lblCapturaNombreTema = findViewById(R.id.lblCapturaNombreTema);
 
         //region Linear para validar cual vamos a mostrar
+        LinearSolucionEcuacionLineales = findViewById(R.id.LinearSolucionEcuacionLineales);
         MatrizGauss = findViewById(R.id.MatrizGauss);
         VectorFuerzaEntrePuntos = findViewById(R.id.VectorFuerzaEntrePuntos);
         VectorProyeccion = findViewById(R.id.VectorProyeccion);
@@ -279,6 +286,7 @@ public class CapturaDeDatos extends AppCompatActivity {
         InicializarFuerzaResultante();
         InicializarVectorFuProyeccion();
         InicializarProductoConVectores();
+        SolucionEcuacionesLiniales();
         InicializarMatrizInverza();
         InicializarOperacionPolarPotencia();
         InicializarRaizNumerosPolares();
@@ -301,8 +309,11 @@ public class CapturaDeDatos extends AppCompatActivity {
         OperacionPolarPotencia.setVisibility(myExerciseToSolve.getIdTema().equals(103) ? View.VISIBLE : View.GONE);
         PolarAExponencial.setVisibility(myExerciseToSolve.getIdTema().equals(104) ? View.VISIBLE : View.GONE);
 
+
         MatrizGauss.setVisibility(myExerciseToSolve.getIdTema().equals(201) ? View.VISIBLE : View.GONE);
         MatrizInverza.setVisibility(myExerciseToSolve.getIdTema().equals(202) ? View.VISIBLE : View.GONE);
+        LinearSolucionEcuacionLineales.setVisibility(myExerciseToSolve.getIdTema().equals(204) ? View.VISIBLE : View.GONE);
+        MatrizGauss.setVisibility(myExerciseToSolve.getIdTema().equals(204) ? View.VISIBLE : View.GONE);
 
         VectorFuerzaEntrePuntos.setVisibility(myExerciseToSolve.getIdTema().equals(301) ? View.VISIBLE : View.GONE);
         VectorProyeccion.setVisibility(myExerciseToSolve.getIdTema().equals(302) ? View.VISIBLE : View.GONE);
@@ -1884,6 +1895,35 @@ public class CapturaDeDatos extends AppCompatActivity {
                 Gauss31.setText(""); Gauss32.setText(""); Gauss33.setText(""); Gauss34.setText(""); Gauss3Igual.setText(""); Gauss41.setText(""); Gauss42.setText(""); Gauss43.setText(""); Gauss44.setText(""); Gauss4Igual.setText("");
     }
     //endregion
+
+    private void SolucionEcuacionesLiniales(){
+
+        btnMGauss = findViewById(R.id.btnMGauss);
+        tvMGauss = findViewById(R.id.tvMGauss);
+
+        btnMInversa = findViewById(R.id.btnMInversa);
+        tvMInversa = findViewById(R.id.tvMInversa);
+
+        btnMGauss.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                OpcionSeleccionada(btnMGauss,tvMGauss);
+                OpcionOriginal(btnMInversa,tvMInversa);
+                MatrizGauss.setVisibility(View.VISIBLE);
+                MatrizInverza.setVisibility(View.GONE);
+            }
+        });
+        btnMInversa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                OpcionSeleccionada(btnMInversa,tvMInversa);
+                OpcionOriginal(btnMGauss,tvMGauss);
+                MatrizInverza.setVisibility(View.VISIBLE);
+                MatrizGauss.setVisibility(View.GONE);
+            }
+        });
+
+    }
 
     //region MatrizInverza
     private void InicializarMatrizInverza(){

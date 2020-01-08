@@ -35,6 +35,8 @@ public class ExercisesSolotionsDetail {
 
                 case 202:
                     return MatrizInverza(_pDatos);
+                case 204:
+                    return MatrizInverza(_pDatos);
 
 
                 case 301:

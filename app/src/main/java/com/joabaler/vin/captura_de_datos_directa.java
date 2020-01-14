@@ -8826,7 +8826,7 @@ public class captura_de_datos_directa extends AppCompatActivity {
 
                 Long _insertdata = mydbvin.insert(ScriptDB.TABLE_DATOS,ScriptDB.CAMPO_IDDATO,_datos);
                 _contador++;
-                Toast.makeText(getApplicationContext(), "Insert ????? "+_insertdata.toString(), Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), "Insert ????? "+_insertdata.toString(), Toast.LENGTH_LONG).show();
             }
             _msj = _contador.equals(arrayListDatos.size()) ? "Ejercicio guardado..." : "¡Error de almacenamiento!" ;
             Toast.makeText(captura_de_datos_directa.this, _msj, Toast.LENGTH_LONG).show();

@@ -973,26 +973,33 @@ public class solucionDirecta {
     }
 
     private static double det(double[][] mat) {
-        if (mat.length == 1)
-            return mat[0][0];
-        if (mat.length == 2)
-            return mat[0][0] * mat[1][1] - mat[1][0] * mat[0][1];
-        double sum = 0, sign = 1;
-        int newN = mat.length - 1;
-        double[][] temp = new double[newN][newN];
-        for (int t = 0; t < newN; t++) {
-            int q = 0;
-            for (int i = 0; i < newN; i++) {
-                for (int j = 0; j < newN; j++) {
-                    temp[i][j] = mat[1 + i][q + j];
-                }
-                if (q == i)
-                    q = 1;
-            }
-            sum += sign * mat[0][t] * det(temp);
-            sign *= -1;
+        double det;
+        if(mat.length==2)
+        {
+            det=(mat[0][0]*mat[1][1])-(mat[1][0]*mat[0][1]);
+            return det;
         }
-        return sum;
+        double suma=0;
+        for(int i=0; i<mat.length; i++){
+            double[][] nm=new double[mat.length-1][mat.length-1];
+            for(int j=0; j<mat.length; j++){
+                if(j!=i){
+                    for(int k=1; k<mat.length; k++){
+                        int indice=-1;
+                        if(j<i)
+                            indice=j;
+                        else if(j>i)
+                            indice=j-1;
+                        nm[indice][k-1]=mat[j][k];
+                    }
+                }
+            }
+            if(i%2==0)
+                suma+=mat[i][0] * det(nm);
+            else
+                suma-=mat[i][0] * det(nm);
+        }
+        return suma;
     }
 
     /*---------Vectores---------*/

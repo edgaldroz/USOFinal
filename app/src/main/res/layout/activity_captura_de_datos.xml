@@ -235,7 +235,7 @@
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:maxLines="1"
-                            android:maxLength="4"
+                            android:maxLength="5"
                             android:maxWidth="50dp"
                             android:maxHeight="50dp"
                             android:hint="θ °"
@@ -717,7 +717,7 @@
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:maxLines="1"
-                            android:maxLength="4"
+                            android:maxLength="5"
                             android:maxWidth="50dp"
                             android:maxHeight="50dp"
                             android:hint="θ°"
@@ -727,8 +727,6 @@
                             android:layout_gravity="bottom"/>
 
                     </LinearLayout>
-
-
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -1061,7 +1059,7 @@
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:maxLines="1"
-                            android:maxLength="4"
+                            android:maxLength="5"
                             android:maxWidth="50dp"
                             android:maxHeight="50dp"
                             android:hint="θ°"
@@ -4144,7 +4142,7 @@
                                 android:inputType="numberSigned|numberDecimal"
                                 android:maxWidth="65dp"
                                 android:maxHeight="50dp"
-                                android:maxLength="4"
+                                android:maxLength="5"
                                 android:maxLines="1"
                                 android:textAlignment="center" />
                             <TextView
@@ -4275,7 +4273,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:visibility="gone"
+            android:visibility="visible"
             android:layout_marginTop="15dp">
 
             <!-- seleccion tipo de operacion -->

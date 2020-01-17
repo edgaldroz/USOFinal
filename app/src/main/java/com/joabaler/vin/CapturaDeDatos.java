@@ -2520,7 +2520,7 @@ public class CapturaDeDatos extends AppCompatActivity {
                 OpcionOriginal(ProductoConVectoresLinearPunto,ProductoConVectoresTextPunto);
                 OpcionOriginal(ProductoConVectoresLinearMixto,ProductoConVectoresTextMixto);
                 ProductoConVectoresLinearVectorC.setVisibility(View.GONE);
-                ProductoConVectoresTipoCruz.setVisibility(View.VISIBLE);
+               // ProductoConVectoresTipoCruz.setVisibility(View.VISIBLE);
                 ProductoConVectoresTipoEjercicio = 2.0;
 
             }
@@ -2589,9 +2589,9 @@ public class CapturaDeDatos extends AppCompatActivity {
                         myArrayDatos.add(Double.parseDouble(ProductoConVectoresK3.getText().toString()));
                     }
                     String _result = ExercisesSolotionsDetail.MenuMetodos(myExerciseToSolve.getIdTema(),myArrayDatos);
-                    Toast.makeText(CapturaDeDatos.this,_result +"",Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(CapturaDeDatos.this,_result +"",Toast.LENGTH_SHORT).show();
                     openActivity();
-                   // myArrayDatos.clear();
+                    myArrayDatos.clear();
                 }
             }
         });

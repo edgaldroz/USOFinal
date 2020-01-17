@@ -719,8 +719,8 @@ public class CapturaDeDatos extends AppCompatActivity {
         PolarAExponencialLinearNO.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                OpcionSeleccionada(PolarAExponencialLinearSI,PolarAExponencialTextSI);
-                OpcionOriginal(PolarAExponencialLinearNO,PolarAExponencialTextNO);
+                OpcionSeleccionada(PolarAExponencialLinearNO,PolarAExponencialTextNO);
+                OpcionOriginal(PolarAExponencialLinearSI,PolarAExponencialTextSI);
                 PolarAExponencialEsRaiz = 0.0;
                 PolarAExponencialLinearIndiceX.setVisibility(View.GONE);
                 PolarAExponencialEjemploImg.setVisibility(View.GONE);
@@ -948,7 +948,7 @@ public class CapturaDeDatos extends AppCompatActivity {
                         }
                         myArrayDatosDatos = myArrayDatos;
                         String _result = ExercisesSolotionsDetail.MenuMetodos(myExerciseToSolve.getIdTema(), myArrayDatos);
-                        Toast.makeText(CapturaDeDatos.this, _result, Toast.LENGTH_LONG).show();
+                       // Toast.makeText(CapturaDeDatos.this, _result, Toast.LENGTH_LONG).show();
                         openActivity();
                         //myArrayDatos.clear();
                     }
@@ -2569,6 +2569,7 @@ public class CapturaDeDatos extends AppCompatActivity {
         ProductoConVectoresbtnSolucion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                myArrayDatos.clear();
                 if (ProductoConVectoresValidar(ProductoConVectoresTipoEjercicio.intValue())){
 
                     myArrayDatos.add(ProductoConVectoresTipoEjercicio);
@@ -2591,7 +2592,7 @@ public class CapturaDeDatos extends AppCompatActivity {
                     String _result = ExercisesSolotionsDetail.MenuMetodos(myExerciseToSolve.getIdTema(),myArrayDatos);
 //                    Toast.makeText(CapturaDeDatos.this,_result +"",Toast.LENGTH_SHORT).show();
                     openActivity();
-                    myArrayDatos.clear();
+                   // myArrayDatos.clear();
                 }
             }
         });

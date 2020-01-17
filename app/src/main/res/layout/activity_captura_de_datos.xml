@@ -862,7 +862,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:id="@+id/PolarAExponencial"
-                android:visibility="gone">
+                android:visibility="visible">
                 <!-- x -->
                 <!-- Seleccion de opciones -->
                 <LinearLayout
@@ -4273,7 +4273,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:visibility="visible"
+            android:visibility="gone"
             android:layout_marginTop="15dp">
 
             <!-- seleccion tipo de operacion -->

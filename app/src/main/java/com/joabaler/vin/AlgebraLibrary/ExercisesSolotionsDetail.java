@@ -70,7 +70,7 @@ public class ExercisesSolotionsDetail {
                 Respuesta = String.format("%.1f <) %.2f",_numero,_angulo);
                 Porque = "El valor no es una raíz sino un valor entero se eleva a la potencia del ejercicio";
                 for (int i = 0; i < exponente; i++){
-                    Procedimiento += exponente + " * ";
+                    Procedimiento += _pDatos.get(0) + " * ";
                 }
                 Procedimiento = Procedimiento.substring(0,Procedimiento.length() - 2);
                 Procedimiento += " = " + _numero;
@@ -80,7 +80,7 @@ public class ExercisesSolotionsDetail {
                     Respuesta = String.format("%.1f <) %.2f",_numero,_angulo);
                     Porque = "El valor es una raíz pero el exponente es par, se eleva el valor de R al expoente planteado en el ejercicio";
                     for (int i = 0; i < exponente; i++){
-                        Procedimiento += exponente + " * ";
+                        Procedimiento += "√(" + _pDatos.get(0)+ ") * ";
                     }
                     Procedimiento = Procedimiento.substring(0,Procedimiento.length() - 2);
                     Procedimiento += " = " + _numero;
@@ -92,10 +92,10 @@ public class ExercisesSolotionsDetail {
                     Respuesta = String.format("%.1f √(%.1f) <) %.2f",_numero,rAux,_angulo);
                     Porque = "El valor es una raíz y el exponente es impar, se toma un valor de R y se eleva el valor de R al (expoente - 1) planteado en el ejercicio";
                     for (int i = 0; i < exponente; i++){
-                        Procedimiento += exponente + " * ";
+                        Procedimiento += "√(" + _pDatos.get(0) + ") * ";
                     }
                     Procedimiento = Procedimiento.substring(0,Procedimiento.length() - 2);
-                    Procedimiento += " = " + _numero +"\n = "+_numero + " * "+rAux;
+                    Procedimiento += " = " + _numero +"\n = "+_numero + " * √("+rAux+")";
                 }
             }
 

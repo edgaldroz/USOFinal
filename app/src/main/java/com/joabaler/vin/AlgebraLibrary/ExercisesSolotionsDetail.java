@@ -58,9 +58,7 @@ public class ExercisesSolotionsDetail {
             String Respuesta = "",Porque = "", Procedimiento= "Número = ";
             Double _numero = _pDatos.get(0), _esraiz = _pDatos.get(1),
                     _angulo = _pDatos.get(2), exponente = _pDatos.get(3),  vAux = 0.0, rAux = 0.0;
-
             _angulo = _angulo * exponente;
-
             vAux = _angulo / 360;
             Integer entero = vAux.intValue();//Integer.parseInt(vAux.toString().substring(0,1)); //Integer.parseInt(vAux.toString());
             _angulo = ((vAux - entero)*360);
@@ -75,27 +73,28 @@ public class ExercisesSolotionsDetail {
                 Procedimiento = Procedimiento.substring(0,Procedimiento.length() - 2);
                 Procedimiento += " = " + _numero;
             }else {
-                if (exponente % 2 == 0){ //entero
+                //Si es raiz
+                if (exponente % 2 == 0){ //exponente par
                     _numero = Math.pow(_numero, exponente - 2);
+                    double coeficienteRaiz = Math.pow(_pDatos.get(0),(_pDatos.get(3)/2));
                     Respuesta = String.format("%.1f <) %.2f",_numero,_angulo);
                     Porque = "El valor es una raíz pero el exponente es par, se eleva el valor de R al expoente planteado en el ejercicio";
                     for (int i = 0; i < exponente; i++){
-                        Procedimiento += "√(" + _pDatos.get(0)+ ") * ";
+                        Procedimiento += "√(" + _pDatos.get(0) + ") * "; /////////////
                     }
                     Procedimiento = Procedimiento.substring(0,Procedimiento.length() - 2);
-                    Procedimiento += " = " + _numero;
+                    Procedimiento += " \n= " + Math.pow(_pDatos.get(0),(_pDatos.get(3)/2));
                 }
                 else { //impar
-
                     rAux = _numero;
-                    _numero = Math.pow(_numero, exponente - 3);
+                    _numero = _pDatos.get(3) > 1 ? Math.pow(_pDatos.get(0),((_pDatos.get(3) - 1)/2)) :Math.pow(_pDatos.get(0),(_pDatos.get(3)/2));
                     Respuesta = String.format("%.1f √(%.1f) <) %.2f",_numero,rAux,_angulo);
                     Porque = "El valor es una raíz y el exponente es impar, se toma un valor de R y se eleva el valor de R al (expoente - 1) planteado en el ejercicio";
-                    for (int i = 0; i < exponente; i++){
-                        Procedimiento += "√(" + _pDatos.get(0) + ") * ";
+                    for (int i = 0; i < exponente - 1; i++){
+                        Procedimiento += "√(" +_pDatos.get(0) + ") * "; /////////////
                     }
                     Procedimiento = Procedimiento.substring(0,Procedimiento.length() - 2);
-                    Procedimiento += " = " + _numero +"\n = "+_numero + " * √("+rAux+")";
+                    Procedimiento += " = " + _numero +"\n\n = "+ _numero + " * √("+rAux +")";
                 }
             }
 

@@ -232,7 +232,7 @@
 
                         <EditText
                             android:id="@+id/OperacionPolarPotenciaAngulo"
-                            android:layout_width="50dp"
+                            android:layout_width="65dp"
                             android:layout_height="50dp"
                             android:maxLines="1"
                             android:maxLength="6"
@@ -714,7 +714,7 @@
 
                         <EditText
                             android:id="@+id/RaizNumerosPolaresAngulo"
-                            android:layout_width="50dp"
+                            android:layout_width="65dp"
                             android:layout_height="50dp"
                             android:maxLines="1"
                             android:maxLength="6"
@@ -1056,7 +1056,7 @@
 
                         <EditText
                             android:id="@+id/PolarAExponencialAngulo"
-                            android:layout_width="50dp"
+                            android:layout_width="65dp"
                             android:layout_height="50dp"
                             android:maxLines="1"
                             android:maxLength="6"

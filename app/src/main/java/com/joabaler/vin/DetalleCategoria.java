@@ -151,18 +151,16 @@ public class DetalleCategoria extends AppCompatActivity {
 
 
         //vectores
-        myDataBaseTopics.add(new csTemasContenido(305,3,"Producto interno o producto escalar.","El producto de un escalar por un vector da por resultado otro vector, con la misma dirección que el primero. Al hacer la multiplicación, el escalar cambia el módulo del vector (gráficamente el largo) y en caso de ser negativo cambia también el sentido.",R.drawable.ic_matriz2,false,false));
-
-
-        myDataBaseTopics.add(new csTemasContenido(301,3,"Fuerza Resultante en el espacio - Proyección de un vector sobre otro. Vector proyección","Una fuerza F en un espacio tridimensional se puede descomponer en componentes rectangulares Fx, Fy y Fz",R.drawable.ic_matriz2,true,false));
-        myDataBaseTopics.add(new csTemasContenido(302,3,"VectorProyeccion - Proyección de un vector sobre otro. Vector proyección","Para obtener el vector proyección vamos a multiplicar el módulo del vector proyección por un vector unitario que tenga la misma dirección que tiene el vector proyección.",R.drawable.ic_matriz2,true,false));
-        myDataBaseTopics.add(new csTemasContenido(303,3,"Producto mixto o triple producto escalar. Definición y propiedades","Sean A = (Ax, Ay, Az), B = (Bx, By, Bz) y C = (Cx, Cy, Cz) la operación entre estos tres vectores que combina el producto escalar con el producto vectorial, se le denomina producto escalar triple o producto mixto",R.drawable.ic_matriz2,true,false));
-       // myDataBaseTopics.add(new csTemasContenido(304,3,"Producto vectorial de dos vectores en R3. Definición y propiedades","si A = (a1, a2, a3) y B = (b1, b2, b3) son vectores, entonces el producto vectorial de A y B, al que denotaremos como AxB, es:\nAxB = (a2b3 – a3b2 , a3b1 – a1b3 , a1b2 – a2b1)\n",R.drawable.ic_matriz,true,false));
-
+        myDataBaseTopics.add(new csTemasContenido(309,3,"Vector Unitario","Un vector unitario es aquél que tiene módulo 1. Para hallar un vector unitario a partir de cualquier vector, hay que dividir este último por su módulo.",R.drawable.ic_matriz2,false,false));
         myDataBaseTopics.add(new csTemasContenido(307,3,"Suma. Vector resultante","Se define el vector suma de ambos (w) a otro vector cuyas componentes se calculan sumando las componentes de cada uno de ellos",R.drawable.ic_matriz2,false,false));
         myDataBaseTopics.add(new csTemasContenido(308,3,"Resta. Vector resultante","Se define el vector Resta de ambos (w) a otro vector cuyas componentes se calculan sumando las componentes de cada uno de ellos",R.drawable.ic_matriz2,false,false));
-        myDataBaseTopics.add(new csTemasContenido(309,3,"Vector Unitario","Un vector unitario es aquél que tiene módulo 1. Para hallar un vector unitario a partir de cualquier vector, hay que dividir este último por su módulo.",R.drawable.ic_matriz2,false,false));
+        myDataBaseTopics.add(new csTemasContenido(305,3,"Producto interno o producto escalar.","El producto de un escalar por un vector da por resultado otro vector, con la misma dirección que el primero. Al hacer la multiplicación, el escalar cambia el módulo del vector (gráficamente el largo) y en caso de ser negativo cambia también el sentido.",R.drawable.ic_matriz2,false,false));
+        myDataBaseTopics.add(new csTemasContenido(303,3,"Producto mixto o triple producto escalar. Definición y propiedades","Sean A = (Ax, Ay, Az), B = (Bx, By, Bz) y C = (Cx, Cy, Cz) la operación entre estos tres vectores que combina el producto escalar con el producto vectorial, se le denomina producto escalar triple o producto mixto",R.drawable.ic_matriz2,true,false));
         myDataBaseTopics.add(new csTemasContenido(310,3,"Angulo entre vectores.","θab = cos^-1((a.b)/(ab))",R.drawable.ic_matriz2,false,false));
+        myDataBaseTopics.add(new csTemasContenido(302,3,"VectorProyeccion - Proyección de un vector sobre otro. Vector proyección","Para obtener el vector proyección vamos a multiplicar el módulo del vector proyección por un vector unitario que tenga la misma dirección que tiene el vector proyección.",R.drawable.ic_matriz2,true,false));
+        myDataBaseTopics.add(new csTemasContenido(301,3,"Fuerza Resultante en el espacio - Proyección de un vector sobre otro. Vector proyección","Una fuerza F en un espacio tridimensional se puede descomponer en componentes rectangulares Fx, Fy y Fz",R.drawable.ic_matriz2,true,false));
+        // myDataBaseTopics.add(new csTemasContenido(304,3,"Producto vectorial de dos vectores en R3. Definición y propiedades","si A = (a1, a2, a3) y B = (b1, b2, b3) son vectores, entonces el producto vectorial de A y B, al que denotaremos como AxB, es:\nAxB = (a2b3 – a3b2 , a3b1 – a1b3 , a1b2 – a2b1)\n",R.drawable.ic_matriz,true,false));
+
     }
 
     void getListTopics(Integer _pCategorySelected) {

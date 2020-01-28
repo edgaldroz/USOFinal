@@ -65,7 +65,7 @@ public class ExercisesSolotionsDetail {
 
             if (_esraiz == 0.0 ){ //no es raiz
                 _numero = Math.pow(_numero,exponente);
-                Respuesta = String.format("%.1f <) %.2f",_numero,_angulo);
+                Respuesta = String.format("%.1f cis %.2f",_numero,_angulo);
                 Porque = "El valor no es una raíz sino un valor entero se eleva a la potencia del ejercicio";
                 for (int i = 0; i < exponente; i++){
                     Procedimiento += _pDatos.get(0) + " * ";
@@ -77,7 +77,7 @@ public class ExercisesSolotionsDetail {
                 if (exponente % 2 == 0){ //exponente par
                     _numero = Math.pow(_numero, exponente - 2);
                     double coeficienteRaiz = Math.pow(_pDatos.get(0),(_pDatos.get(3)/2));
-                    Respuesta = String.format("%.1f <) %.2f",_numero,_angulo);
+                    Respuesta = String.format("%.1f cis %.2f",_numero,_angulo);
                     Porque = "El valor es una raíz pero el exponente es par, se eleva el valor de R al expoente planteado en el ejercicio";
                     for (int i = 0; i < exponente; i++){
                         Procedimiento += "√(" + _pDatos.get(0) + ") * "; /////////////
@@ -88,7 +88,7 @@ public class ExercisesSolotionsDetail {
                 else { //impar
                     rAux = _numero;
                     _numero = _pDatos.get(3) > 1 ? Math.pow(_pDatos.get(0),((_pDatos.get(3) - 1)/2)) :Math.pow(_pDatos.get(0),(_pDatos.get(3)/2));
-                    Respuesta = String.format("%.1f √(%.1f) <) %.2f",_numero,rAux,_angulo);
+                    Respuesta = String.format("%.1f √(%.1f) cis %.2f",_numero,rAux,_angulo);
                     Porque = "El valor es una raíz y el exponente es impar, se toma un valor de R y se eleva el valor de R al (expoente - 1) planteado en el ejercicio";
                     for (int i = 0; i < exponente - 1; i++){
                         Procedimiento += "√(" +_pDatos.get(0) + ") * "; /////////////
@@ -105,8 +105,8 @@ public class ExercisesSolotionsDetail {
                     "Saber que procedimiento ocupar para la solución del ejercicio. \n Si es raíz y la potencia es impar (se tomar un valor semejante a R y se eleva a la potencia - 1 el valor de R\n" +
                             "De lo contrario (potencia par y raíz o el valor de R es entero) se eleva a la potencia planteada en el ejercicio)",
                     "Esctructura del ejercicio:\n" +
-                            " (R <) ángulo)^ exponente\n" +
-                            "Ejemplo: ( √5 <) 35 )^ 3"));
+                            " (R cis ángulo)^ exponente\n" +
+                            "Ejemplo: ( √5 cis 35 )^ 3"));
             //endregion
 
             //region Paso 2
@@ -125,8 +125,8 @@ public class ExercisesSolotionsDetail {
 
             //region Paso 4
             myListSteps.add(new csDetailStep(4,
-                    "Se calcular el valor equivalente en terminos menores que 180",
-                    "El valor debe estar presentado en el intevalo entre 0 y 180",
+                    "Se calcular el valor equivalente en terminos menores que 360",
+                    "El valor debe estar presentado en el intevalo entre 0 y 360",
                     String.format("%.2f / 360 = %.2f \n%.2f - %d = %.1f\n%.1f * 360 = %.2f",_pDatos.get(2)*_pDatos.get(3),vAux,vAux,entero,vAux-entero,vAux-entero,_angulo)));
             //endregion
 
@@ -191,7 +191,7 @@ public class ExercisesSolotionsDetail {
                         "Para poder aplicar el método de calculo de la raíz de numeros pilares",
                         String.format("R = √((%f)² + (%f)² ) = %f \n" +
                                         "tan⁻¹(%f/%f) = %f | queda en el cuadrante #%d \n" +
-                                        "<) = %s \n" +
+                                        "Ang = %s \n" +
                                         "Z = %f cis %f",
                                  prtReal ,
                                  prtImaginaria,
@@ -452,10 +452,8 @@ public class ExercisesSolotionsDetail {
                         myListSteps.add(new csDetailStep(Correlativo,
                                 "Con las respuestas obtenidas en los últimos dos pasos, se construye el formato de respuesta",
                                 "Es una forma general de presentar el resultaod",
-                                String.format("%s e^%.2f\n" +
-                                              "%s e^%s",
-                                        respfinal,(expo1+expo2),
-                                        respfinal,Exponente_I(expo1+expo2)
+                                String.format("%s e^%.2f",
+                                        respfinal,(expo1+expo2)
                                 )
                         ));
                         Correlativo++;
@@ -539,10 +537,8 @@ public class ExercisesSolotionsDetail {
                             myListSteps.add(new csDetailStep(Correlativo,
                                     "Con las respuestas obtenidas en los últimos dos pasos, se construye el formato de respuesta",
                                     "Es una forma general de presentar el resultaod",
-                                    String.format("=%.2f ∙ %.0f√(%.2f) e^%.2f\n" +
-                                                  "=%.2f ∙ %.0f√(%.2f) e^%s",
-                                            (numero2*coeficienteraiz),_baseRaiz,numeroRaiz,(expo1+expo2),
-                                            (numero2*coeficienteraiz),_baseRaiz,numeroRaiz,Exponente_I(expo1+expo2)
+                                    String.format("=%.2f ∙ %.0f√(%.2f) e^%.2f\n",
+                                            (numero2*coeficienteraiz),_baseRaiz,numeroRaiz,(expo1+expo2)
                                     )
                             ));
                             Correlativo++;
@@ -610,9 +606,8 @@ public class ExercisesSolotionsDetail {
                                 myListSteps.add(new csDetailStep(Correlativo,
                                         "Con las respuestas obtenidas en los últimos dos pasos, se construye el formato de respuesta",
                                         "Es una forma general de presentar el resultaod",
-                                        String.format("=%.2f e^%.2f\n" +
-                                                        "=%.2f e^%s",
-                                                (numero1*numero2),(expo1+expo2),(numero1*numero2),Exponente_I(expo1+expo2)
+                                        String.format("=%.2f e^%.2f\n",
+                                                (numero1*numero2),(expo1+expo2)
                                         )
                                 ));
                                 Correlativo++;
@@ -2300,7 +2295,7 @@ public class ExercisesSolotionsDetail {
             myListSteps.add(new csDetailStep(Correlativo,
                     "Se le da formato a la respuesta del ejercicio",
                     "Es una de las formas para indicar de manera simbólica el resultado",
-                    String.format("R = %.2f N <) %.2f°",
+                    String.format("R = %.2f N Ang %.2f°",
                             Math.sqrt((Math.pow(valorVx,2) + Math.pow(valorVy,2))),
                             Math.atan2(valorVx,valorVy))
             ));
@@ -2338,7 +2333,8 @@ public class ExercisesSolotionsDetail {
             ArrayList<Double> CoeficientesEcuacion = new ArrayList<>();
             int Correlativo = 1, filaA = 0, filaB = 0,ReduccionEcuacion = 1;
             Integer valor = 1;
-            String posicion="",matriz_modificada = "",multipliacionEcuaciones = "";
+            String posicion="",matriz_modificada = "",multipliacionEcuaciones = "", porqueSeHizo="";
+            Boolean myIsNaN = false;
             csMatriz EcuA = new csMatriz();
             csMatriz EcuB = new csMatriz();
             Double _numeroMayor = 0.0;
@@ -2371,35 +2367,35 @@ public class ExercisesSolotionsDetail {
                 if (EcuA.getTamano().equals(2)){
 
                     multipliacionEcuaciones = String.format("Fila%d×%.1f: %.1f  %.1f = %.1f\n" +
-                                                            "Fila%d×%.1f: %.1f  %.1f = %.1f\n" +
-                                                            "Suma filas: %.1f  %.1f = %.1f\n\n",
-                                                            filaA,Coe2,(EcuA.getX() * Coe2),(EcuA.getY() * Coe2),(EcuA.getIgual() * Coe2),
-                                                            filaB,Coe1,(EcuB.getX() * Coe1),(EcuB.getY() * Coe1),(EcuB.getIgual() * Coe1),
-                                                            ((EcuA.getX() * Coe2)+(EcuB.getX() * Coe1)),((EcuA.getY() * Coe2)+(EcuB.getY() * Coe1)),((EcuA.getIgual() * Coe2)+(EcuB.getIgual() * Coe1))
+                                    "Fila%d×%.1f: %.1f  %.1f = %.1f\n" +
+                                    "Suma filas: %.1f  %.1f = %.1f\n\n",
+                            filaA,Coe2,(EcuA.getX() * Coe2),(EcuA.getY() * Coe2),(EcuA.getIgual() * Coe2),
+                            filaB,Coe1,(EcuB.getX() * Coe1),(EcuB.getY() * Coe1),(EcuB.getIgual() * Coe1),
+                            ((EcuA.getX() * Coe2)+(EcuB.getX() * Coe1)),((EcuA.getY() * Coe2)+(EcuB.getY() * Coe1)),((EcuA.getIgual() * Coe2)+(EcuB.getIgual() * Coe1))
                     );
 
                 }else
-                    {
-                        if (EcuA.getTamano().equals(3)){
-                            multipliacionEcuaciones = String.format("Fila%d×%.1f: %.1f  %.1f  %.1f = %.1f\n" +
-                                                                    "Fila%d×%.1f: %.1f  %.1f  %.1f = %.1f\n" +
-                                                                    "Suma filas: %.1f  %.1f  %.1f = %.1f\n\n",
-                                                                    filaA,Coe2,(EcuA.getX() * Coe2),(EcuA.getY() * Coe2),(EcuA.getZ() * Coe2),(EcuA.getIgual() * Coe2),
-                                                                    filaB,Coe1,(EcuB.getX() * Coe1),(EcuB.getY() * Coe1),(EcuB.getZ() * Coe1),(EcuB.getIgual() * Coe1),
-                                                                    ((EcuA.getX() * Coe2)+(EcuB.getX() * Coe1)),((EcuA.getY() * Coe2)+(EcuB.getY() * Coe1)),((EcuA.getZ() * Coe2)+(EcuB.getZ() * Coe1)),((EcuA.getIgual() * Coe2)+(EcuB.getIgual() * Coe1))
-                                    );
-                        }else {
-                            if (EcuA.getTamano().equals(4)){
-                                multipliacionEcuaciones = String.format("Fila%d×%.1f: %.1f  %.1f  %.1f  %.1f = %.1f\n" +
-                                                                        "Fila%d×%.1f: %.1f  %.1f  %.1f  %.1f = %.1f\n" +
-                                                                        "Suma filas: %.1f  %.1f  %.1f  %.1f = %.1f\n\n",
-                                        filaA,Coe2,(EcuA.getW() * Coe2),(EcuA.getX() * Coe2),(EcuA.getY() * Coe2),(EcuA.getZ() * Coe2),(EcuA.getIgual() * Coe2),
-                                        filaB,Coe1,(EcuB.getW() * Coe1),(EcuB.getX() * Coe1),(EcuB.getY() * Coe1),(EcuB.getZ() * Coe1),(EcuB.getIgual() * Coe1),
-                                        ((EcuA.getW() * Coe2)+(EcuB.getW() * Coe1)),((EcuA.getX() * Coe2)+(EcuB.getX() * Coe1)),((EcuA.getY() * Coe2)+(EcuB.getY() * Coe1)),((EcuA.getZ() * Coe2)+(EcuB.getZ() * Coe1)),((EcuA.getIgual() * Coe2)+(EcuB.getIgual() * Coe1))
-                                );
-                            }
+                {
+                    if (EcuA.getTamano().equals(3)){
+                        multipliacionEcuaciones = String.format("Fila%d×%.1f: %.1f  %.1f  %.1f = %.1f\n" +
+                                        "Fila%d×%.1f: %.1f  %.1f  %.1f = %.1f\n" +
+                                        "Suma filas: %.1f  %.1f  %.1f = %.1f\n\n",
+                                filaA,Coe2,(EcuA.getX() * Coe2),(EcuA.getY() * Coe2),(EcuA.getZ() * Coe2),(EcuA.getIgual() * Coe2),
+                                filaB,Coe1,(EcuB.getX() * Coe1),(EcuB.getY() * Coe1),(EcuB.getZ() * Coe1),(EcuB.getIgual() * Coe1),
+                                ((EcuA.getX() * Coe2)+(EcuB.getX() * Coe1)),((EcuA.getY() * Coe2)+(EcuB.getY() * Coe1)),((EcuA.getZ() * Coe2)+(EcuB.getZ() * Coe1)),((EcuA.getIgual() * Coe2)+(EcuB.getIgual() * Coe1))
+                        );
+                    }else {
+                        if (EcuA.getTamano().equals(4)){
+                            multipliacionEcuaciones = String.format("Fila%d×%.1f: %.1f  %.1f  %.1f  %.1f = %.1f\n" +
+                                            "Fila%d×%.1f: %.1f  %.1f  %.1f  %.1f = %.1f\n" +
+                                            "Suma filas: %.1f  %.1f  %.1f  %.1f = %.1f\n\n",
+                                    filaA,Coe2,(EcuA.getW() * Coe2),(EcuA.getX() * Coe2),(EcuA.getY() * Coe2),(EcuA.getZ() * Coe2),(EcuA.getIgual() * Coe2),
+                                    filaB,Coe1,(EcuB.getW() * Coe1),(EcuB.getX() * Coe1),(EcuB.getY() * Coe1),(EcuB.getZ() * Coe1),(EcuB.getIgual() * Coe1),
+                                    ((EcuA.getW() * Coe2)+(EcuB.getW() * Coe1)),((EcuA.getX() * Coe2)+(EcuB.getX() * Coe1)),((EcuA.getY() * Coe2)+(EcuB.getY() * Coe1)),((EcuA.getZ() * Coe2)+(EcuB.getZ() * Coe1)),((EcuA.getIgual() * Coe2)+(EcuB.getIgual() * Coe1))
+                            );
                         }
                     }
+                }
                 //endregion
 
                 _newW = ((EcuA.getW() * Coe2) + (EcuB.getW() * Coe1));
@@ -2433,7 +2429,7 @@ public class ExercisesSolotionsDetail {
                 if (TamanoEcuacion.equals(2)){
 
                     for (int ii = 1; ii < _mtrz.size(); ii++) {
-                        matriz_modificada += String.format("║ %.1f  %.1f │ %.1f ║\n",
+                        matriz_modificada += String.format("¦ %.1f  %.1f ¦ %.1f ¦\n",
                                 _mtrz.get(ii).getX(), _mtrz.get(ii).getY(), _mtrz.get(ii).getIgual());
                     }
 
@@ -2441,7 +2437,7 @@ public class ExercisesSolotionsDetail {
                     if (TamanoEcuacion.equals(3)){
 
                         for (int ii = 1; ii < _mtrz.size(); ii++) {
-                            matriz_modificada += String.format("║ %.1f  %.1f  %.1f │ %.1f ║\n",
+                            matriz_modificada += String.format("¦ %.1f  %.1f  %.1f ¦ %.1f ¦\n",
                                     _mtrz.get(ii).getX(), _mtrz.get(ii).getY(),
                                     _mtrz.get(ii).getZ(), _mtrz.get(ii).getIgual());
                         }
@@ -2450,7 +2446,7 @@ public class ExercisesSolotionsDetail {
                         if (TamanoEcuacion.equals(4)){
 
                             for (int ii = 1; ii < _mtrz.size(); ii++) {
-                                matriz_modificada += String.format("║ %.1f  %.1f  %.1f  %.1f │ %.1f ║\n",
+                                matriz_modificada += String.format("¦ %.1f  %.1f  %.1f  %.1f ¦ %.1f ¦\n",
                                         _mtrz.get(ii).getW(), _mtrz.get(ii).getX(), _mtrz.get(ii).getY(),
                                         _mtrz.get(ii).getZ(), _mtrz.get(ii).getIgual());
                             }
@@ -2521,7 +2517,7 @@ public class ExercisesSolotionsDetail {
                         if (TamanoEcuacion.equals(2)){
 
                             for (int y = 1; y < _mtrz.size(); y++) {
-                                matriz_modificada += String.format("║ %.1f  %.1f │ %.1f ║\n",
+                                matriz_modificada += String.format("¦ %.1f  %.1f ¦ %.1f ¦\n",
                                         _mtrz.get(y).getX(), _mtrz.get(y).getY(), _mtrz.get(y).getIgual());
                             }
 
@@ -2529,7 +2525,7 @@ public class ExercisesSolotionsDetail {
                             if (TamanoEcuacion.equals(3)){
 
                                 for (int x = 1; x < _mtrz.size(); x++) {
-                                    matriz_modificada += String.format("║ %.1f  %.1f  %.1f │ %.1f ║\n",
+                                    matriz_modificada += String.format("¦ %.1f  %.1f  %.1f ¦ %.1f ¦\n",
                                             _mtrz.get(x).getX(), _mtrz.get(x).getY(),
                                             _mtrz.get(x).getZ(), _mtrz.get(x).getIgual());
                                 }
@@ -2538,7 +2534,7 @@ public class ExercisesSolotionsDetail {
                                 if (TamanoEcuacion.equals(4)){
 
                                     for (int w = 1; w < _mtrz.size(); w++) {
-                                        matriz_modificada += String.format("║ %.1f  %.1f  %.1f  %.1f │ %.1f ║\n",
+                                        matriz_modificada += String.format("¦ %.1f  %.1f  %.1f  %.1f ¦ %.1f ¦\n",
                                                 _mtrz.get(w).getW(), _mtrz.get(w).getX(), _mtrz.get(w).getY(),
                                                 _mtrz.get(w).getZ(), _mtrz.get(w).getIgual());
                                     }
@@ -2563,6 +2559,8 @@ public class ExercisesSolotionsDetail {
             //region Division para que den los 1
             for (int i=0; i < _pCeldasToUnos.length;i++){
                 multipliacionEcuaciones="";
+                porqueSeHizo = "";
+                myIsNaN = false;
                 Correlativo++;
                 filaA = 0;
 
@@ -2580,30 +2578,54 @@ public class ExercisesSolotionsDetail {
                 Coe1 = Coeficientes.getValor();
                 Coe2 = Coeficientes.getValor2();
 
-
+                ///NUEVOS CAMBIOS
+                //Valida la indicacion de fila entre el coeficiente
                 //region Proceso de Divison Visual
                 if (EcuA.getTamano().equals(2)){
-
-                    multipliacionEcuaciones = String.format("Fila%d ÷ %.1f: %.1f  %.1f = %.1f\n\n",
-                            filaA,Coe1,(EcuA.getX() / Coe1),(EcuA.getY() / Coe1),(EcuA.getIgual() / Coe1)
-                    );
-
-                }else
-                {
-                    if (EcuA.getTamano().equals(3)){
-                        multipliacionEcuaciones = String.format("Fila%d ÷ %.1f: %.1f  %.1f  %.1f = %.1f\n\n",
-                                filaA,Coe1,(EcuA.getX() / Coe1),(EcuA.getY() / Coe1),(EcuA.getZ() / Coe1),(EcuA.getIgual() / Coe1)
+                    //Ecuacion 2x2
+                    if (Double.isNaN(EcuA.getX()/Coe1) || Double.isNaN(EcuA.getY()/Coe1) || Double.isNaN(EcuA.getIgual()/Coe1)){
+                        myIsNaN = true;
+                        multipliacionEcuaciones = String.format("Fila%d ÷ %.1f: %.1f / %.1f    %.1f / %.1f = %.1f / %.1f\n\n",
+                                filaA,Coe1,EcuA.getX(), Coe1,EcuA.getY() , Coe1,EcuA.getIgual() , Coe1
                         );
                     }else {
-                        if (EcuA.getTamano().equals(4)){
-                            multipliacionEcuaciones = String.format("Fila%d ÷ %.1f: %.1f  %.1f  %.1f  %.1f = %.1f\n\n",
-                                    filaA,Coe1,(EcuA.getW() / Coe1),(EcuA.getX() / Coe1),(EcuA.getY() / Coe1),(EcuA.getZ() / Coe1),(EcuA.getIgual() / Coe1)
+                        myIsNaN = false;
+                        multipliacionEcuaciones = String.format("Fila%d ÷ %.1f: %.1f  %.1f = %.1f\n\n",
+                                filaA,Coe1,(EcuA.getX() / Coe1),(EcuA.getY() / Coe1),(EcuA.getIgual() / Coe1)
+                        );
+                    }
+                }else{
+                    //Ecuacion 3x3
+                    if (EcuA.getTamano().equals(3)){
+                        if (Double.isNaN(EcuA.getX()/Coe1) || Double.isNaN(EcuA.getY()/Coe1) || Double.isNaN(EcuA.getZ()/Coe1) || Double.isNaN(EcuA.getIgual()/Coe1)){
+                            myIsNaN = true;
+                            multipliacionEcuaciones = String.format("Fila%d ÷ %.1f: %.1f / %.1f    %.1f / %.1f    %.1f / %.1f = %.1f / %.1f\n\n",
+                                    filaA,Coe1,EcuA.getX(), Coe1,EcuA.getY() ,Coe1,EcuA.getZ() ,Coe1,EcuA.getIgual(), Coe1
                             );
+                        }else {
+                            myIsNaN = false;
+                            multipliacionEcuaciones = String.format("Fila%d ÷ %.1f: %.1f  %.1f  %.1f = %.1f\n\n",
+                                    filaA,Coe1,(EcuA.getX() / Coe1),(EcuA.getY() / Coe1),(EcuA.getZ() / Coe1),(EcuA.getIgual() / Coe1)
+                            );
+                        }
+                    }else {
+                        //Ecuacion 4x4
+                        if (EcuA.getTamano().equals(4)){
+                            if (Double.isNaN(EcuA.getW()/Coe1) || Double.isNaN(EcuA.getX()/Coe1) || Double.isNaN(EcuA.getY()/Coe1) || Double.isNaN(EcuA.getZ()/Coe1) || Double.isNaN(EcuA.getIgual()/Coe1)){
+                                myIsNaN = true;
+                                multipliacionEcuaciones = String.format("Fila%d ÷ %.1f: %.1f / %.1f  %.1f / %.1f  %.1f / %.1f  %.1f / %.1f = %.1f / %.1f\n\n",
+                                        filaA,Coe1,EcuA.getW(),Coe1,EcuA.getX(),Coe1,EcuA.getY(),Coe1,EcuA.getZ(),Coe1,EcuA.getIgual(),Coe1
+                                );
+                            }else {
+                                myIsNaN = false;
+                                multipliacionEcuaciones = String.format("Fila%d ÷ %.1f: %.1f  %.1f  %.1f  %.1f = %.1f\n\n",
+                                        filaA,Coe1,(EcuA.getW() / Coe1),(EcuA.getX() / Coe1),(EcuA.getY() / Coe1),(EcuA.getZ() / Coe1),(EcuA.getIgual() / Coe1)
+                                );
+                            }
                         }
                     }
                 }
                 //endregion
-
 
                 _newW = (EcuA.getW() / Coe1);
                 _newX = (EcuA.getX() / Coe1);
@@ -2629,38 +2651,44 @@ public class ExercisesSolotionsDetail {
                 if (TamanoEcuacion.equals(2)){
 
                     for (int iii = 1; iii < _mtrz.size(); iii++) {
-                        matriz_modificada += String.format("║ %.1f  %.1f │ %.1f ║\n",
-                                _mtrz.get(iii).getX(), _mtrz.get(iii).getY(), _mtrz.get(iii).getIgual());
+                        matriz_modificada += String.format("¦ %.1f  %.1f ¦ %.1f ¦\n",
+                                Double.isNaN(_mtrz.get(iii).getX()) ? 0.0 :_mtrz.get(iii).getX(),
+                                Double.isNaN(_mtrz.get(iii).getY()) ? 0.0 :_mtrz.get(iii).getY(),
+                                Double.isNaN(_mtrz.get(iii).getIgual()) ? 0.0 :_mtrz.get(iii).getIgual());
                     }
-
                 }else {
-
                     if (TamanoEcuacion.equals(3)){
 
                         for (int iii = 1; iii < _mtrz.size(); iii++) {
-                            matriz_modificada += String.format("║ %.1f  %.1f  %.1f │ %.1f ║\n",
-                                    _mtrz.get(iii).getX(), _mtrz.get(iii).getY(),
-                                    _mtrz.get(iii).getZ(), _mtrz.get(iii).getIgual());
+                            matriz_modificada += String.format("¦ %.1f  %.1f  %.1f ¦ %.1f ¦\n",
+                                    Double.isNaN(_mtrz.get(iii).getW()) ? 0.0 :_mtrz.get(iii).getX(),
+                                    Double.isNaN(_mtrz.get(iii).getY()) ? 0.0 :_mtrz.get(iii).getY(),
+                                    Double.isNaN(_mtrz.get(iii).getZ()) ? 0.0 :_mtrz.get(iii).getZ(),
+                                    Double.isNaN(_mtrz.get(iii).getIgual()) ? 0.0 :_mtrz.get(iii).getIgual());
                         }
-
                     }else {
                         if (TamanoEcuacion.equals(4)){
 
                             for (int iii = 1; iii < _mtrz.size(); iii++) {
-                                matriz_modificada += String.format("║ %.1f  %.1f  %.1f  %.1f │ %.1f ║\n",
-                                        _mtrz.get(iii).getW(), _mtrz.get(iii).getX(), _mtrz.get(iii).getY(),
-                                        _mtrz.get(iii).getZ(), _mtrz.get(iii).getIgual());
+                                matriz_modificada += String.format("¦ %.1f  %.1f  %.1f  %.1f ¦ %.1f ¦\n",
+                                        Double.isNaN(_mtrz.get(iii).getW()) ? 0.0 :_mtrz.get(iii).getW(),
+                                        Double.isNaN(_mtrz.get(iii).getX()) ? 0.0 :_mtrz.get(iii).getX(),
+                                        Double.isNaN(_mtrz.get(iii).getY()) ? 0.0 :_mtrz.get(iii).getY(),
+                                        Double.isNaN(_mtrz.get(iii).getZ()) ? 0.0 :_mtrz.get(iii).getZ(),
+                                        Double.isNaN(_mtrz.get(iii).getIgual()) ? 0.0 :_mtrz.get(iii).getIgual()
+                                );
                             }
                         }
                     }
                 }
+                porqueSeHizo = "Para que la posición " + filaA +" "+ filaB + " (fila y columna respectivamente) nos de como resultado uno";
+                porqueSeHizo = myIsNaN ? porqueSeHizo+"\n\nEl resultado de la división no es exacta, sus valores fueron sustituidos por cero (0.0) en la fila definida al inicio." : porqueSeHizo;
                 myListSteps.add(new csDetailStep(Correlativo,
                         String.format("Dividir la fila %d entre %.1f",filaA,Coe1),
-                        "Para que la posición" + filaA + filaB + " (fila y columna respectivamente) nos de como resultado uno",
+                        porqueSeHizo,
                         String.format("%s %s", multipliacionEcuaciones, matriz_modificada)
                 ));
                 //endregion
-
             }
             //endregion
         }

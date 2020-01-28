@@ -163,7 +163,9 @@ public class CapturaDeDatos extends AppCompatActivity {
             OpcRepreExponencialEjemploRaizIndX,
             OpcRepreExponencialEjemploRaizIndA,
             OpcRepreExponencialEjemploRaizC,
-            OpcRepreExponencialEjemploRaizN;
+            OpcRepreExponencialEjemploRaizN,
+                    OpcRepreExponencialEjemploE1,
+                    OpcRepreExponencialEjemploE2;
 
 
     private EditText
@@ -876,6 +878,9 @@ public class CapturaDeDatos extends AppCompatActivity {
         OpcRepreExponencialEjemploRaizC = findViewById(R.id.OpcRepreExponencialEjemploRaizC);
         OpcRepreExponencialEjemploRaizN = findViewById(R.id.OpcRepreExponencialEjemploRaizN);
 
+        OpcRepreExponencialEjemploE1 = findViewById(R.id.OpcRepreExponencialEjemploE1);
+        OpcRepreExponencialEjemploE2 = findViewById(R.id.OpcRepreExponencialEjemploE2);
+
         //edit
         OpcRepreExponencialEditIndiceA = findViewById(R.id.OpcRepreExponencialEditIndiceA);
         OpcRepreExponencialEditCoeficienteA = findViewById(R.id.OpcRepreExponencialEditCoeficienteA);
@@ -1069,6 +1074,9 @@ public class CapturaDeDatos extends AppCompatActivity {
                 OpcRepreExponencialEjemploImgA.setVisibility(View.GONE);
                 OpcRepreExponencialEjemploInB.setVisibility(View.GONE);
                 OpcRepreExponencialEjemploImgB.setVisibility(View.GONE);
+
+                OpcRepreExponencialEjemploE1.setVisibility(View.VISIBLE);
+                OpcRepreExponencialEjemploE2.setVisibility(View.VISIBLE);
             }
         });
         OpcRepreExponencialLinear_A_Raiz.setOnClickListener(new View.OnClickListener() {
@@ -1094,6 +1102,9 @@ public class CapturaDeDatos extends AppCompatActivity {
                 OpcRepreExponencialEjemploImgA.setVisibility(View.GONE);
                 OpcRepreExponencialEjemploInB.setVisibility(View.VISIBLE);
                 OpcRepreExponencialEjemploImgB.setVisibility(View.VISIBLE);
+
+                OpcRepreExponencialEjemploE1.setVisibility(View.GONE);
+                OpcRepreExponencialEjemploE2.setVisibility(View.GONE);
             }
         });
         OpcRepreExponencialLinear_Raiz_B.setOnClickListener(new View.OnClickListener() {
@@ -1119,6 +1130,9 @@ public class CapturaDeDatos extends AppCompatActivity {
                 OpcRepreExponencialEjemploImgA.setVisibility(View.VISIBLE);
                 OpcRepreExponencialEjemploInB.setVisibility(View.GONE);
                 OpcRepreExponencialEjemploImgB.setVisibility(View.GONE);
+
+                OpcRepreExponencialEjemploE1.setVisibility(View.GONE);
+                OpcRepreExponencialEjemploE2.setVisibility(View.GONE);
             }
         });
         OpcRepreExponencialLinear_Raiz_Raiz.setOnClickListener(new View.OnClickListener() {
@@ -1144,6 +1158,9 @@ public class CapturaDeDatos extends AppCompatActivity {
                 OpcRepreExponencialEjemploImgA.setVisibility(View.VISIBLE);
                 OpcRepreExponencialEjemploInB.setVisibility(View.VISIBLE);
                 OpcRepreExponencialEjemploImgB.setVisibility(View.VISIBLE);
+
+                OpcRepreExponencialEjemploE1.setVisibility(View.GONE);
+                OpcRepreExponencialEjemploE2.setVisibility(View.GONE);
             }
         });
         //endregion

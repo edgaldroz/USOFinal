@@ -5797,14 +5797,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="25dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="i "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold"/>
                                     <EditText
                                         android:id="@+id/etOpcI1ProductoPunto"
                                         android:layout_width="50dp"
@@ -5818,6 +5810,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="i "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold"/>
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -5828,14 +5828,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="12dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="j "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
                                     <EditText
                                         android:id="@+id/etOpcJ1ProductoPunto"
                                         android:layout_width="50dp"
@@ -5849,6 +5841,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="j "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -5859,14 +5859,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="12dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="k "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
                                     <EditText
                                         android:id="@+id/etOpcK1ProductoPunto"
                                         android:layout_width="50dp"
@@ -5880,6 +5872,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="k "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -5907,14 +5907,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="25dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="i "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold"/>
                                     <EditText
                                         android:id="@+id/etOpcI2ProductoPunto"
                                         android:layout_width="50dp"
@@ -5928,6 +5920,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="i "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold"/>
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -5938,14 +5938,7 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="12dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="j "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
+
                                     <EditText
                                         android:id="@+id/etOpcJ2ProductoPunto"
                                         android:layout_width="50dp"
@@ -5959,6 +5952,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="j "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -5969,14 +5970,7 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="12dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="k "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
+
                                     <EditText
                                         android:id="@+id/etOpcK2ProductoPunto"
                                         android:layout_width="50dp"
@@ -5990,6 +5984,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="k "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -6150,6 +6152,15 @@
                             android:gravity="top"
                             android:layout_marginBottom="15dp" />
 
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="n ( i + j + k)"
+                            android:textColor="#324154"
+                            android:textSize="12dp"
+                            android:gravity="top"
+                            android:layout_marginBottom="15dp" />
+
                         <LinearLayout
                             android:visibility="visible"
                             android:id="@+id/OpcLinear2SumaVectorR"
@@ -6218,14 +6229,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="25dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="i "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold"/>
                                     <EditText
                                         android:id="@+id/etOpcI1SumaVectorR"
                                         android:layout_width="50dp"
@@ -6239,6 +6242,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="i "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold"/>
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -6249,14 +6260,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="12dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="j "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
                                     <EditText
                                         android:id="@+id/etOpcJ1SumaVectorR"
                                         android:layout_width="50dp"
@@ -6270,6 +6273,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="j "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -6280,14 +6291,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="12dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="k "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
                                     <EditText
                                         android:id="@+id/etOpcK1SumaVectorR"
                                         android:layout_width="50dp"
@@ -6301,6 +6304,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="k "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -6363,14 +6374,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="25dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="i "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold"/>
                                     <EditText
                                         android:id="@+id/etOpcI2SumaVectorR"
                                         android:layout_width="50dp"
@@ -6384,6 +6387,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="i "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold"/>
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -6394,14 +6405,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="12dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="j "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
                                     <EditText
                                         android:id="@+id/etOpcJ2SumaVectorR"
                                         android:layout_width="50dp"
@@ -6415,6 +6418,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="j "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -6425,14 +6436,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="12dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="k "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
                                     <EditText
                                         android:id="@+id/etOpcK2SumaVectorR"
                                         android:layout_width="50dp"
@@ -6446,6 +6449,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="k "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -6605,6 +6616,15 @@
                             android:gravity="top"
                             android:layout_marginBottom="15dp" />
 
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="n ( i + j + k )"
+                            android:textColor="#324154"
+                            android:textSize="12dp"
+                            android:gravity="top"
+                            android:layout_marginBottom="15dp" />
+
                         <LinearLayout
                             android:visibility="visible"
                             android:id="@+id/OpcLinear2RestaVectorR"
@@ -6673,14 +6693,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="25dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="i "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold"/>
                                     <EditText
                                         android:id="@+id/etOpcI1RestaVectorR"
                                         android:layout_width="50dp"
@@ -6694,6 +6706,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="i "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold"/>
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -6704,14 +6724,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="12dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="j "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
                                     <EditText
                                         android:id="@+id/etOpcJ1RestaVectorR"
                                         android:layout_width="50dp"
@@ -6725,6 +6737,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="j "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -6735,14 +6755,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="12dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="k "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
                                     <EditText
                                         android:id="@+id/etOpcK1RestaVectorR"
                                         android:layout_width="50dp"
@@ -6756,6 +6768,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="k "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -6818,14 +6838,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="25dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="i "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold"/>
                                     <EditText
                                         android:id="@+id/etOpcI2RestaVectorR"
                                         android:layout_width="50dp"
@@ -6839,6 +6851,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="i "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold"/>
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -6849,14 +6869,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="12dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="j "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
                                     <EditText
                                         android:id="@+id/etOpcJ2RestaVectorR"
                                         android:layout_width="50dp"
@@ -6870,6 +6882,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="j "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -6880,14 +6900,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="12dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="k "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
                                     <EditText
                                         android:id="@+id/etOpcK2RestaVectorR"
                                         android:layout_width="50dp"
@@ -6901,6 +6913,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="k "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -7094,14 +7114,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="25dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="i "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold"/>
                                     <EditText
                                         android:id="@+id/etOpcI1VectorUnitario"
                                         android:layout_width="50dp"
@@ -7115,6 +7127,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="i "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold"/>
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -7125,14 +7145,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="12dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="j "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
                                     <EditText
                                         android:id="@+id/etOpcJ1VectorUnitario"
                                         android:layout_width="50dp"
@@ -7146,6 +7158,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="j "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -7156,14 +7176,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="12dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="k "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
                                     <EditText
                                         android:id="@+id/etOpcK1VectorUnitario"
                                         android:layout_width="50dp"
@@ -7177,6 +7189,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="k "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -7372,14 +7392,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="25dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="i "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold"/>
                                     <EditText
                                         android:id="@+id/etOpcI1AnguloEntreVectores"
                                         android:layout_width="50dp"
@@ -7393,6 +7405,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="i "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold"/>
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -7403,14 +7423,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="12dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="j "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
                                     <EditText
                                         android:id="@+id/etOpcJ1AnguloEntreVectores"
                                         android:layout_width="50dp"
@@ -7424,6 +7436,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="j "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -7434,14 +7454,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="12dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="k "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
                                     <EditText
                                         android:id="@+id/etOpcK1AnguloEntreVectores"
                                         android:layout_width="50dp"
@@ -7455,6 +7467,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="k "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -7483,14 +7503,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="25dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="i "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold"/>
                                     <EditText
                                         android:id="@+id/etOpcI2AnguloEntreVectores"
                                         android:layout_width="50dp"
@@ -7504,6 +7516,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="i "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold"/>
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -7514,14 +7534,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="12dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="j "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
                                     <EditText
                                         android:id="@+id/etOpcJ2AnguloEntreVectores"
                                         android:layout_width="50dp"
@@ -7535,6 +7547,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="j "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -7545,14 +7565,6 @@
                                     android:gravity="left"
                                     android:layout_marginLeft="12dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="k "
-                                        android:textColor="#008080"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
                                     <EditText
                                         android:id="@+id/etOpcK2AnguloEntreVectores"
                                         android:layout_width="50dp"
@@ -7566,6 +7578,14 @@
                                         android:maxLength="4"
                                         android:maxLines="1"
                                         android:textAlignment="center" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="k "
+                                        android:textColor="#008080"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
                                 </LinearLayout>
                             </LinearLayout>
 

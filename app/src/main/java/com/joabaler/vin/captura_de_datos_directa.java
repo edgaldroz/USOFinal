@@ -8335,13 +8335,13 @@ public class captura_de_datos_directa extends AppCompatActivity {
                     tvSumaVectorRResultado.setText(sdirecta.sumaVectorResultante(n,v,m,w));
                     LinearSumaVectorRResultado.setVisibility(View.VISIBLE);
 
-                    arrayListDatos.add(Double.parseDouble(etOpcN1SumaVectorR.getText().toString()));
+                    arrayListDatos.add(n);
 
                     arrayListDatos.add(Double.parseDouble(etOpcI1SumaVectorR.getText().toString()));
                     arrayListDatos.add(Double.parseDouble(etOpcJ1SumaVectorR.getText().toString()));
                     arrayListDatos.add(Double.parseDouble(etOpcK1SumaVectorR.getText().toString()));
 
-                    arrayListDatos.add(Double.parseDouble(etOpcM1SumaVectorR.getText().toString()));
+                    arrayListDatos.add(m);
 
                     arrayListDatos.add(Double.parseDouble(etOpcI2SumaVectorR.getText().toString()));
                     arrayListDatos.add(Double.parseDouble(etOpcJ2SumaVectorR.getText().toString()));
@@ -8472,13 +8472,13 @@ public class captura_de_datos_directa extends AppCompatActivity {
                     tvRestaVectorRResultado.setText(sdirecta.restaVectorResultante(n,v,m,w));
                     LinearRestaVectorRResultado.setVisibility(View.VISIBLE);
 
-                    arrayListDatos.add(Double.parseDouble(etOpcN1RestaVectorR.getText().toString()));
+                    arrayListDatos.add(n);
 
                     arrayListDatos.add(Double.parseDouble(etOpcI1RestaVectorR.getText().toString()));
                     arrayListDatos.add(Double.parseDouble(etOpcJ1RestaVectorR.getText().toString()));
                     arrayListDatos.add(Double.parseDouble(etOpcK1RestaVectorR.getText().toString()));
 
-                    arrayListDatos.add(Double.parseDouble(etOpcM1RestaVectorR.getText().toString()));
+                    arrayListDatos.add(m);
 
                     arrayListDatos.add(Double.parseDouble(etOpcI2RestaVectorR.getText().toString()));
                     arrayListDatos.add(Double.parseDouble(etOpcJ2RestaVectorR.getText().toString()));

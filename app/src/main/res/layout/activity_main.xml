@@ -90,7 +90,7 @@
                         android:layout_weight="25"
                         android:layout_width="110dp"
                         android:layout_height="110dp"
-                        android:src="@drawable/ic_num_compl"
+                        android:src="@drawable/ic_num_comp"
                         android:layout_gravity="center|right" />
                 </LinearLayout>
 
@@ -112,7 +112,7 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_matriz"
+                        android:src="@drawable/ic_matriz2"
                         android:layout_marginLeft="10dp"/>
 
                     <LinearLayout
